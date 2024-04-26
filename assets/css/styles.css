@@ -1,3 +1,4 @@
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -283,113 +284,235 @@ header {
   padding-bottom: 30px;
 }
 
-
-
-
-/* Main Team */
+/* Main Team Section */
 
 .main-team {
-  padding-top: 120px;/* Задаємо внутрішний відступ зверху 120px */
-  padding-bottom: 120px;/* Задаємо внутрішний відступ знизу 120px */
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .main-team-container {
-  display: flex;/* Відображення flex. Додайте flex контейнер. Це робить його гнучким. */
-  /* Встановлюємо напрямок у якому елементи розміщатимуться в колонку */
+  display: flex;
+  flex-direction: column;
 }
 
 .main-team-logo {
-  font-weight: 600;/* Встановіть товищну(жирність) тексту 700 */
-  font-size: 36;/* Встановіть розмір шрифту 36 */
-  line-height: 1.11;/* Встановіть міжрядковий інтервал 1.11 */
-  text-align: center;/* Встановіть текст по центру (самостійно, цієї інфи ви не знайдете на листочках) */
-  letter-spacing: 0.02em;/* Встановіть інтервал між символами 0.02em */
-  /* Встановіть регістр символів у тексті який буде робити перший символ кожного слова в реченні заголовним*/
-  margin-bottom: 30;/* Встановіть зовнішній відступ знизу 30  */
-  color: white;/* Встановіть білий колір */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: #fff;
+
+  margin-bottom: 30px;
 }
 
 .main-title-text {
-  display: flex;/* Відображення flex. Додайте flex контейнер. Це робить його гнучким. */
-  /* Встановіть елемент по центру (самостійно, цієї інфи ви не знайдете на листочках) */
-  text-align: center;/* Встановіть текст по центру (самостійно, цієї інфи ви не знайдете на листочках) */
-  height: 480;/* Встановіть ширину 480 */
-  margin-bottom: 40;/* Встановіть зовнішній відступ знизу 40 */
-  color: white/* Встановіть білий колір */
+  display: flex;
+  align-self: center;
+  text-align: center;
+  width: 480px;
+  margin-bottom: 40px;
+  color: #fff;
 }
 
 .main-team-images {
-  display: flex;/* Відображення flex. Додайте flex контейнер. Це робить його гнучким. */
-  /* Встановлюємо напрямок у якому елементи розміщатимуться в колонку */
+  display: flex;
+  flex-direction: column;
   background-color: rgba(254, 254, 255, 0.032) rgba(255, 255, 255, 0.018);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  /* Встановіть радіус рамика в 10px */
-  border: 1px ;/* Встановіть рамку в 1px та задайте любий колір */
-  border: 1px ;/* Встановіть рамку в 1px та задайте любий колір */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .main-team-images2 {
-  display: flex;/* Відображення flex. Додайте flex контейнер. Це робить його гнучким.  */
-  /* Встановіть елемент по центру (самостійно, цієї інфи ви не знайдете на листочках) */
-  /* Встановіть радіус рамика в 50% */
-  margin-top: 20;/* Встановіть зовнішній відступ зверху 20 */
+  display: flex;
+  align-self: center;
+  border-radius: 50%;
+  margin-top: 20px;
 }
 
 .main-team-card {
-  display: flex;/* Відображення flex. Додайте flex контейнер. Це робить його гнучким. */
-  /* Встановіть позиціонуванням елементів на головній осі по центру */
-  /* Встановіть відступ 24 (властивість яка відкривається завдяки flex */
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .main-team-title {
-  font-weight: 500;/* Встановіть товищну(жирність) тексту 500 */
-  font-size: 20;/* Встановіть розмір шрифту 20 */
-  line-height: 1.2;/* Встановіть міжрядковий інтервал 1.2 */
-  text-align: center;/* Встановіть текст по центру (самостійно, цієї інфи ви не знайдете на листочках) */
-  letter-spacing: 0.02em;/* Встановіть інтервал між символами 0.02em */
-  color: white;/* Встановіть білий колір */
-  margin-top: 32;/* Встановіть зовнішній відступ зверху 32 */
-  margin-bottom: 8;/* Встановіть зовнішній відступ знизу 8 */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: white;
+
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
+
 .main-team-text {
-  /* Встановіть товищну(жирність) тексту 400 */
-  /* Встановіть розмір шрифту 16 */
-  /* Встановіть міжрядковий інтервал 1.5 */
-  /* Встановіть текст по центру (самостійно, цієї інфи ви не знайдете на листочках) */
-  /* Встановіть інтервал між символами 0.02em */
-  /* Встановіть білий колір */
-  /* Встановіть зовнішній відступ знизу 8 */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #fff;
+
+  margin-bottom: 8px;
 }
 
 .main-soc-list {
-  /* Відображення flex. Додайте flex контейнер. Це робить його гнучким. */
-  /* Встановіть позиціонуванням елементів на головній осі по центру */
-  /* Встановіть відступ 24 (властивість яка відкривається завдяки flex */
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 
-  /* Встановіть внутрішній відступ знизу 20 */
-  /* Встановіть внутрішній відступ зліва 10 */
-  /* Встановіть внутрішній відступ справа 10 */
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .main-soc-item {
-  /* Встановіть ширину 40 */
-  /* Встановіть висоту 40 */
+  width: 40px;
+  height: 40px;
 }
 
 .main-soc-link {
-  /* Встановіть колір фону #0077b5 */
+  background-color: #0077b5;
 
-  /* Встановіть ширину 100% */
-  /* Встановіть висоту 100% */
-  /* Встановіть радіус рамика в 50% */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 
-  /* Відображення flex. Додайте flex контейнер. Це робить його гнучким. */
-  /* Встановіть позиціонуванням елементів на головній осі по центру */
-  /* Встановіть розташуванням елементів вздовж поперечної осі по центру */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-soc-icon {
   fill: #f4f4fd;
 }
+
+
+
+
+
+
+.footer {
+
+}
+
+.fotter-class {
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-decoration: none;
+text-align: center;
+align-items: right;
+}
+
+.sverxy-container {
+  display: flex;
+  gap: 70px;
+
+}
+
+.zone {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-decoration: none;
+  text-align: center;
+  align-items: right;
+}
+
+.footer-list {
+
+}
+
+.footer-link {
+
+}
+
+.footer-link {
+
+}
+
+.sverxy-container {
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-decoration: none;
+  text-align: center;
+  align-items: right;
+  line-height: 54px;
+}
+
+.footer-list {
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  align-items: right;
+}
+
+.footer-li {
+color: white;
+display: flex;
+justify-content: center;
+flex-direction: row;
+text-decoration: none;
+text-align: center;
+align-items: right;
+}
+
+.footer-link {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-decoration: none;
+  text-align: center;
+  align-items: right;
+}
+
+.nav-menu {
+ 
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-decoration: none;
+  text-align: center;
+  align-items: right;
+  gap: 54px;
+}
+
+.footer-zagalovok {
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  align-items:right;
+}
+
+.snizy-container {
+  
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  text-decoration: none;
+  text-align: center;
+  align-items: left;
+}
+

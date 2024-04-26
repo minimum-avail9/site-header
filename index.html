@@ -1,292 +1,458 @@
-<!-- Об'явлення типу документа і мови сторінки -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Метаінформація про сторінку -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zone.</title>
 
-    <!-- Заголовок сторінки -->
-    <title>Назва вашої сторінки</title>
+    <!-- bootstrap -->
 
-    <!-- Підключення зовнішніх стилів -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-   <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- fonts     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap"
+        rel="stylesheet" />
 
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- reset -->
 
 </head>
 
 <body>
-    <!-- 1.Створіть Header сторінки. Задайте йому класс header.  -->
+    <header class="header">
+        <div class="header-container container">
+            <img src="assets/img/header__logo.svg" alt="logo" class="header-logo" />
 
-        <!-- 2.Стовірть контейнер для елементів верхнього блоку. Задайте йому класс header-container та container. -->
+            <nav class="header-nav">
+                <ul class="header-list list">
+                    <li class="header-item">
+                        <a href="#" class="header-link">Home</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link">About Us</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link">Service</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link">Pricing</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#" class="header-link">Blog</a>
+                    </li>
+                </ul>
 
-             
-             <!-- 3.Ствоірть логотип вашого сайту використовуючи тег <img> (не забувай, що у нього є два головні атрибути) (header__logo.svg) -->
-                  
-            <!-- 4.Ствоірть Навігаційне меню. Для цього потрібно написати тільки один тег. Задайте йому класс header-nav -->
+                <button class="button header-button" type="button">
+                    Contact Us
+                </button>
+            </nav>
+        </div>
+    </header>
 
-                <!-- 5.Створіть СПИСОК посилань. Для цього потрібно написати тільки один тег. Задайте йому класс header-list  -->
+    <main class="main">
+        <section class="start container">
+            <div class="solution-container">
+                <div class="start-inner">
+                    <h1 class="start-title">Virtual Reality<br />Business Solutions</h1>
 
-                    <!-- 5.1. Cтворіть елемент списка. Задайте йому класс header-item -->
-                    <!-- 5.1.1. Створіть посилання на Home сторінку. Задайте йому класс header-link-->
+                    <p class="start-article">
+                        We have over 15 year exprience in business consultting arena. We
+                        have over<br />15 year exprience in business consultting arena and
+                        artficial intelligence.
+                    </p>
 
-                    <!-- 5.2. Cтворіть елемент списка. Задайте йому класс header-item -->
-                    <!-- 5.2.1. Створіть посилання на Abous Us сторінку. Задайте йому класс header-link-->
-
-                    <!-- 5.3. Cтворіть елемент списка. Задайте йому класс header-item -->
-                    <!-- 5.3.1. Створіть посилання на Service сторінку. Задайте йому класс header-link-->
-
-                    <!-- 5.4. Cтворіть елемент списка. Задайте йому класс header-item -->
-                    <!-- 5.4.1. Створіть посилання на Pricing сторінку. Задайте йому класс header-link-->
-
-                    <!-- 5.5. Cтворіть елемент списка. Задайте йому класс header-item -->
-                    <!-- 5.5.1. Створіть посилання на Blog сторінку. Задайте йому класс header-link-->
-
-
-                    <!-- 6.Створіть Кнопку. Для Для цього потрібно написати тільки один тег. Задайте йому класс button header-button -->
-                    <!-- 6.1 Стовірть посилання на на почту. (href="mailto:example@gmail.com"). В тегу напишіть Contact Us -->
-
-<header>
-    <div class="header-container container ">
-        <img src="./assets/img/header__logo.svg" alt="logo">    
-        <nav class="header-nav">
-            <ul class="header-list">
-                <li class="header-item"><a  class="header-link" href="">Home</a></li>
-                <li class="header-item"><a  class="header-link" href="">About Us</a></li>
-                <li class="header-item"><a  class="header-link">Service</a></li>
-                <li class="header-item"><a  class="header-link">Pricing</a></li>
-                <li class="header-item"><a  class="header-link">Blog</a></li>
-            </ul>
-            <button class="button header-button"><a href="mailto:example@gmail.com">Contact Us</a></button>
-            
-        </nav>
-
-    </div>
-
-</header>
-
- <!-- 1. Основна частина сторінки починається тут. Задайте клас main -->
-
-        <!-- 2. Тут починається секція. Задайте клас start і container -->
-
-            <!-- 3. Створіть контейнер та задайте йому клас solution-container -->
-
-                <!-- 4. Ствоірть внутрішній контейнер для основної інформації. Задайте йому клас start-inner -->
-
-                    <!-- 4.1. Створіть заголовок першого рівня, головний заголовок сторінки. Задайте йому клас start-title -->
-
-                    <!-- 4.2 Створіть текст з описом, де ми розповідаємо про те, що ми робимо. Задайте йому клас start-article.
-                    Сам текс - We have over 15 year exprience in business consultting arena. We have
-                        over 15 year exprience in business consultting arena and artficial intelligence.-->
-                        >
-                        <!-- 5. Ствірть контейнер для кнопки, які дозволяють користувачеві виконувати різні дії. Задайте класс start-buttons -->
-    
-                            <!-- 5.1. Створіть кнопку. Задайте класс button та tart-button -->
-    
-                                <!-- 5.1.1 Створіть посилання в середині якого Join Us. -->
-    
-                            <!-- 5.2. Створіть кнопку. Задайте класс start-button-video -->
-    
-                                <!-- 5.2.1. Створіть іконку через тег img (start__button-video.svg). -->
-    
-                                <!-- 5.2.2. Створіть текст на кнопці Watch video  -->
-     
-                    <!-- 6. Створіть основне зображення, яке показує людину. (start__dude.png). Задайте клас start-img  -->
-
-<main class="main">
-    <section class="start container">
-        <div class="solution-container">
-            <div class="start-inner">
-                <h1 class="start-title">Virtual Reality Business Solutions</h1>
-                <p class="start-article">We have over 15 year exprience in business consultting arena. We have
-                    over 15 year exprience in business consultting arena and artficial intelligence.</p>
                     <div class="start-buttons">
-                          <button class="button start-button">
+                        <button class="button start-button">
                             <a href="#">Join Us</a>
                         </button>
-                          <button class="start-button-video">
-                            <img src="./assets/img/start__button-video.svg" alt="">
+
+                        <button class="start-button-video">
+                            <img src="assets/img/start__button-video.svg" alt="icon" />
                             <span>Watch video</span>
                         </button>
                     </div>
+                </div>
+
+                <img src="assets/img/start__dude.png" alt="" class="start-img" />
             </div>
-            <img src="./assets/img/start__dude.png" alt="" class="start-img">
-        </div>
+        </section>
 
-    </section>
+        <section class="service">
+            <div class="container">
+                <h1 class="service-title">Our Service</h1>
 
+                <div class="service-text">
+                    <p class="service-article">
+                        We turn information into actionable insights We work to understand
+                        your issues<br />and are driven to ask better questions in the
+                        pursuit of making work.
+                    </p>
+                </div>
 
-                <!--   В цій практичній задачі ми створюємо ще одну секцію сайта в якій буде знаходитись інформація про сайт. 
-                Це буде 3-тя по рахунку секція.
-                Не забувайте стежити за цифрами, це ваша підказка. -->
-        
-            <!-- 1. Створіть секцію. Задайте клас information -->
-        
-                <!-- 2. Створіть контейнер для контенту секції "Information". Задайте класс container та information-2  -->
-                <!-- 2.1 Створіть картинку (section-3-2.png) елемента. Задавати класс не потрібно  -->
-        
-                <!-- 3. Створіть ще один контейнер для контенту секції. Задайте класс container та inform-item  -->
-                    <!-- 3.1 Створіть заголовок контейнера в якому буде написано "We complete every projects extra care as customer need". Задайте класс inform-title -->
-                    <!-- 3.2 Створіть текст для цього контейнера в якому буде написано "Lorem".  Задайте йому класс inform-article  -->
-                    <!-- 3.3 Створіть кнопку для цього контейнера в якому буде написано "Read more", задайте йому тип button.  Задайте йому класс button  -->
-        
-                <!-- Ви зробили секцію та один контейнер для нього. Тепер ви повинні створити ще один такий же самий контейнер тільки в ноьму повинна бути інша картинка, а саме (section-3-1.png) 
-                     Після цього вам потрбіно зробити CSS оформлення вашої нової секціі. Перейдіть в ваш CSS файл. 
-                -->
-        
-                <section class="information">
-                    <div class="container information-2">
-                        <img src="./assets/img/section-3-2.png" alt="" />
-                        <div class="inform-item">
-                            <h3 class="inform-title">
-                                We complete every projects extra care as customer need
-                            </h3>
-                            <p class="inform-article">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-                                dictum risus, non suscipit arcu. Quisque aliquam posuere tortor,
-                                sit amet convallis nuncoe scelerisque in. orem ipsum dolor sit
-                                amet, consectetur adipisicing elit. Labore eius molestiae facere,
-                                natus reprehenderit eaque eum, autem ipsam. Magfini, error.
-                                Tempora odit laborum iure inventore possimus laboriosam qui nam.
-                            </p>
-                            <button type="button" class="button">Read more</button>
-                        </div>
+                <div class="service-items">
+                    <div class="service-item">
+                        <img src="assets/img/service__icon-1.svg" alt="icon-1" class="service-item-icon" />
+
+                        <h3 class="service-item-title">Order Management</h3>
+
+                        <p class="service-item-article">
+                            Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                            quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+                        </p>
+
+                        <a href="#" class="service-item-link d-flex">
+                            <span>Learn more</span>
+                            <img src="assets/img/service__item-arrow.svg" alt="arrow" />
+                        </a>
                     </div>
-        
-                    <div class="container information-3">
-                        <img src="./assets/img/section-3-1.png" alt="" />
-                        <div class="inform-item">
-                            <h3 class="inform-title">
-                                We complete every projects extra care as customer need
-                            </h3>
-                            <p class="inform-article">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-                                dictum risus, non suscipit arcu. Quisque aliquam posuere tortor,
-                                sit amet convallis nuncoe scelerisque in. orem ipsum dolor sit
-                                amet, consectetur adipisicing elit. Labore eius molestiae facere,
-                                natus reprehenderit eaque eum, autem ipsam. Magfini, error.
-                                Tempora odit laborum iure inventore possimus laboriosam qui nam.
-                            </p>
-                            <button type="button" class="button">Read more</button>
-                        </div>
+
+                    <div class="service-item">
+                        <img src="assets/img/service__icon-1.svg" alt="icon-1" class="service-item-icon" />
+
+                        <h3 class="service-item-title">Order Management</h3>
+
+                        <p class="service-item-article">
+                            Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                            quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+                        </p>
+
+                        <a href="#" class="service-item-link d-flex">
+                            <span>Learn more</span>
+                            <img src="assets/img/service__item-arrow.svg" alt="arrow" />
+                        </a>
                     </div>
-                </section>
 
+                    <div class="service-item">
+                        <img src="assets/img/service__icon-1.svg" alt="icon-1" class="service-item-icon" />
 
-                
-               
+                        <h3 class="service-item-title">Order Management</h3>
 
+                        <p class="service-item-article">
+                            Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                            quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+                        </p>
 
+                        <a href="#" class="service-item-link">
+                            <span>Learn more</span>
+                            <img src="assets/img/service__item-arrow.svg" alt="arrow" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</main>
+        <section class="information">
+            <div class="container information-2">
+                <img src="./assets/img/section-3-2.png" alt="" />
+                <div class="inform-item">
+                    <h3 class="inform-title">
+                        We complete every projects extra care as customer need
+                    </h3>
+                    <p class="inform-article">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                        dictum risus, non suscipit arcu. Quisque aliquam posuere tortor,
+                        sit amet convallis nuncoe scelerisque in. orem ipsum dolor sit
+                        amet, consectetur adipisicing elit. Labore eius molestiae facere,
+                        natus reprehenderit eaque eum, autem ipsam. Magfini, error.
+                        Tempora odit laborum iure inventore possimus laboriosam qui nam.
+                    </p>
+                    <button type="button" class="button">Read more</button>
+                </div>
+            </div>
 
-</body>
-
-</html>
-
-<!-- 1. Створіть секцію. Задайте клас main-team -->
-
-    <!-- 1.1 Створіть контейнер. Задайте клас main-team-container та container -->
-        <!-- 1.2 Створіть заголовок "Met Our Team". Задайте клас main-team-logo -->
-        <!-- 1.3 Створіть текст "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-            accumsan nisi Ut ut felis congue nisl hendrerit commodo" Задайте клас main-title-text -->
-
-            ↑   <!-- 2. Створіть список. Задайте клас main-team-card та list -->
-            ↑ →→→  <!-- 2.1 Створіть елемент списка. Задайте клас main-team-images -->
-            ↑          <!-- 2.1.1 Створіть зображення (mark.jpg). Задайте ширину та висоту 140. Задайте клас main-team-images2 -->
-            ↑          <!-- 2.1.2 Створіть заголовок "Mark Guerrero". Задайте клас main-team-title -->
-            ↑          <!-- 2.1.3 Створіть текст "Product Designer". Задайте клас main-team-text -->
-            ↑
-            ↑          <!-- 2.1.4 Створіть список всередині елемента списка. Задайте клас main-soc-list та list -->
-            ↑
-            ↑          <!-- 2.1.4.1 Створіть список елемента. Задайте клас main-soc-item.   НОМЕР 2 НОМЕР 2 НОМЕР 2 -->
-            ↑               <!-- 2.1.4.2 Створіть посилання. Задайте клас main-soc-link та link -->
-            ↑ →→ →→→→ →→    <!-- 2.1.4.3 Створіть тег "svg" та всередині svg створіть тег use. Задайте клас svg main-soc-icon -->
-            ↑                                            ↑
-            ↑                                            ↑
-            ↑                                            ↑
-            ↑                                    <!-- Після того як ви все написали створіть ще 3 рази створення елемента списка (Потрібно скопіювати те що знаходиться під номером 2)  -->
-            ↑
-            <!-- 
-            Після того як ви створили список (і зробили 4 елементі для нього), вам потрібно скопіювати ще 3 рази все від 2.1 пункта до 2.1.4.3. Тобто у вас поивинно бути 4 великих елемента списка.
-            -->
-             
-            <section class=" main-team">
-                <div class="main-team-container container">
-                    <h1 class="main-team-logo">Met Our Team</h1>
-                    <p class="main-title-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-                        accumsan nisi Ut ut felis congue nisl hendrerit commodo</p>
-                
-                <ul class="main-team-card ">
-                    <li class="list main-team-images">
-                        <img  class="main-team-images2" src="mark.jpg" width="140" height="140" >
-                        <h1 class=" main-team-title">Mark Guerrero</h1>
+            <div class="container information-3">
+                <img src="./assets/img/section-3-1.png" alt="" />
+                <div class="inform-item">
+                    <h3 class="inform-title">
+                        We complete every projects extra care as customer need
+                    </h3>
+                    <p class="inform-article">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                        dictum risus, non suscipit arcu. Quisque aliquam posuere tortor,
+                        sit amet convallis nuncoe scelerisque in. orem ipsum dolor sit
+                        amet, consectetur adipisicing elit. Labore eius molestiae facere,
+                        natus reprehenderit eaque eum, autem ipsam. Magfini, error.
+                        Tempora odit laborum iure inventore possimus laboriosam qui nam.
+                    </p>
+                    <button type="button" class="button">Read more</button>
+                </div>
+            </div>
+        </section>
+        <section class="main-team">
+            <div class="main-team-container container">
+                <h2 class="main-team-logo">Met Our Team</h2>
+                <p class="main-title-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+                    accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+                </p>
+                <ul class="main-team-card list">
+                    <li class="main-team-images">
+                        <img class="main-team-images2" src="./assets/img/mark.jpg" alt="Mark Guerrero" width="140"
+                            height="140" />
+                        <h3 class="main-team-title">Mark Guerrero</h3>
                         <p class="main-team-text">Product Designer</p>
                         <ul class="main-soc-list list">
                             <li class="main-soc-item">
-                                <a class="main-soc-link link" href=""></a>
-                                <svg class=" main-soc-icon"><use></use></svg>
-                                
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="list main-team-images">
-                        <img  class="main-team-images2" src="mark.jpg" width="140" height="140" >
-                        <h1 class=" main-team-title">Mark Guerrero</h1>
-                        <p class="main-team-text">Product Designer</p>
+                    <li class="main-team-images">
+                        <img class="main-team-images2" src="./assets/img/tom.jpg" alt="Tom Ford" width="140"
+                            height="140" />
+                        <h3 class="main-team-title">Tom Ford</h3>
+                        <p class="main-team-text">Frontend Developer</p>
                         <ul class="main-soc-list list">
                             <li class="main-soc-item">
-                                <a class="main-soc-link link" href=""></a>
-                                <svg class=" main-soc-icon"><use></use></svg>
-                                
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="list main-team-images">
-                        <img  class="main-team-images2" src="mark.jpg" width="140" height="140" >
-                        <h1 class=" main-team-title">Mark Guerrero</h1>
-                        <p class="main-team-text">Product Designer</p>
+                    <li class="main-team-images">
+                        <img class="main-team-images2" src="./assets/img/daniel.jpg" alt="Camila Garcia" width="140"
+                            height="140" />
+                        <h3 class="main-team-title">Camila Garcia</h3>
+                        <p class="main-team-text">Marketing</p>
                         <ul class="main-soc-list list">
                             <li class="main-soc-item">
-                                <a class="main-soc-link link" href=""></a>
-                                <svg class=" main-soc-icon"><use></use></svg>
-                                
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="list main-team-images">
-                        <img  class="main-team-images2" src="mark.jpg" width="140" height="140" >
-                        <h1 class=" main-team-title">Mark Guerrero</h1>
-                        <p class="main-team-text">Product Designer</p>
+                    <li class="main-team-images">
+                        <img class="main-team-images2" src="./assets/img/camila.jpg" alt="Mou" width="140"
+                            height="140" />
+                        <h3 class="main-team-title">Daniel Wilson</h3>
+                        <p class="main-team-text">UI Designer</p>
                         <ul class="main-soc-list list">
                             <li class="main-soc-item">
-                                <a class="main-soc-link link" href=""></a>
-                                <svg class=" main-soc-icon"><use></use></svg>
-                                
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="main-soc-item">
+                                <a class="main-soc-link link" href="">
+                                    <svg class="main-soc-icon" width="16" height="16">
+                                        <use href=""></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
                 </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="fotter-class">
+
+            <div class="sverxy-container">
+                <div class="zone">
+                    <ul class="footer-list">
+                        <li class="footer-li">
+                            <h1>Zone</h1>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Kiev</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link"> 380 758 48 3654</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">support@gmail.com</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">@2021 Zone -AI</a>
+                        </li>
+                    </ul>
                 </div>
-            </section> 
-                    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </body>
-        
-        </html>
+                <div class="nav-menu">
+                    <ul class="footer-list">
+                        <li class="footer-li">
+                            <h1 class="footer-zagalovok">Service</h1>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Order Management</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Social Assistant</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Crypto Platform</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Analyzer of the News</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="footer-li">
+                            <h1 class="footer-zagalovok">Company</h1>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">About Us</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">News</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Our trusted partner</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">New users FAQ</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="footer-li">
+                            <h1 class="footer-zagalovok">Supports</h1>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Help center</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Feedback</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Crypto Platform</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Analyzer of the News</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li class="footer-li">
+                            <h1 class="footer-zagalovok">Recourse</h1>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Download app</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Blog</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Whatss new</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-link">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="snizy">
+                <ul class="footer-list">
+                    <li class="footer-li">
+                        <a class="footer-link">Privacy</a>
+                    </li>
+                    <li class="footer-li">
+                        <a class="footer-link">Security</a>
+                    </li>
+                    <li class="footer-li">
+                        <a class="footer-link">Tems</a>
+                    </li>
+                    <li class="footer-li">
+                        <a class="footer-link">@2021 Zone -AI</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
