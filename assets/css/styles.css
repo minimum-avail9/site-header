@@ -516,3 +516,32 @@ align-items: right;
   align-items: left;
 }
 
+
+.snizy {
+}
+
+.snizy-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list-2 {
+  display: flex;
+  gap: 100px;
+
+}
+
+.footer-li-3 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-li-2 {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.footer-link-2 {
+  color: #fff;
+}
